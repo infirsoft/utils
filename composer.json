@@ -1,0 +1,22 @@
+{
+    "name": "infirsoft/utils",
+    "description": "InfirSoft utils",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Łożyński",
+            "email": "lozynskiadam@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "InfirSoft\\Utils\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "ext-dom": "*",
+        "ext-libxml": "*"
+    }
+}
