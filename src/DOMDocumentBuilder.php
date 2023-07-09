@@ -17,10 +17,14 @@ abstract class DOMDocumentBuilder
         $this->dom->preserveWhiteSpace = false;
         $this->dom->formatOutput = true;
 
-        $this->appendElement($this->dom, $this->index());
+        if (($body = $this->index()) instanceof Node) {
+            $body = $body->getDOMElement();
+        }
+
+        $this->appendElement($this->dom, $body);
     }
 
-    abstract public function index(): DOMElement;
+    abstract public function index(): Node|DOMElement;
 
     public function get(): DOMDocument
     {
@@ -58,5 +62,10 @@ abstract class DOMDocumentBuilder
         if ($element->nodeValue !== '') {
             $to->append($element);
         }
+    }
+
+    protected function createNode(string $name, array $attributes = []): Node
+    {
+        return new Node($this->dom, $name, $attributes);
     }
 }
