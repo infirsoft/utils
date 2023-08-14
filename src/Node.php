@@ -32,7 +32,9 @@ class Node
 
     public function append(Node $child): self
     {
-        $this->DOMElement->append($child->DOMElement);
+        if ($child->DOMElement->textContent !== '') {
+            $this->DOMElement->append($child->DOMElement);
+        }
 
         return $this;
     }
