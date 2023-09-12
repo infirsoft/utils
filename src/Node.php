@@ -39,6 +39,11 @@ class Node
         return $this;
     }
 
+    public function appendWhen(bool $condition, Node $child): self
+    {
+        return $condition ? $this->append($child) : $this;
+    }
+
     public function appendTo(Node $parent): self
     {
         $parent->append($this);
