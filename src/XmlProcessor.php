@@ -1,10 +1,10 @@
 <?php
 
-namespace InfirSoft\Utils;
+namespace Infirsoft\Utils;
 
 use DOMDocument;
 use DOMNode;
-use InfirSoft\Utils\Exceptions\InvalidXmlException;
+use Infirsoft\Utils\Exceptions\InvalidXmlException;
 
 class XmlProcessor
 {
