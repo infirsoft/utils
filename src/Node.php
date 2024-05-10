@@ -1,6 +1,6 @@
 <?php
 
-namespace InfirSoft\Utils;
+namespace Infirsoft\Utils;
 
 use DOMDocument;
 use DOMElement;
