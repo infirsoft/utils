@@ -1,6 +1,6 @@
 <?php
 
-namespace InfirSoft\Utils\Exceptions;
+namespace Infirsoft\Utils\Exceptions;
 
 use Exception;
 
