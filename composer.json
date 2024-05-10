@@ -1,6 +1,6 @@
 {
     "name": "infirsoft/utils",
-    "description": "InfirSoft utils",
+    "description": "helpers kit",
     "type": "library",
     "authors": [
         {
@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "InfirSoft\\Utils\\": "src/"
+            "Infirsoft\\Utils\\": "src/"
         }
     },
     "require": {
